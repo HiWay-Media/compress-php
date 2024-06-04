@@ -4,10 +4,10 @@ const COMPRESS_API_URL       = "https://api-compress.hiway.media";
 //
 class COMPRESS_ENDPOINTS {
     // Added tangram endoints
-    const CATEGORIES_URL                = COMPRESS_API_URL."/api/v4.0/external/upload/categories"; // /create
+    const CATEGORIES_URL                = COMPRESS_API_URL . "/api/v4.0/external/upload/categories"; // /create
     const CREATE_CATEGORY               = COMPRESS_ENDPOINTS::CATEGORIES_URL."/create";
     // Restreamers
-    const GET_RESTREAMERS               = COMPRESS_API_URL."/api/v4.0/external/restreamers";
+    const GET_RESTREAMERS               = COMPRESS_API_URL . "/api/v4.0/external/restreamers";
     const GET_RUNNING_INSTANCES         = COMPRESS_ENDPOINTS::GET_RESTREAMERS . "/running_instances";
     const GET_RUNNING_SINGLE_INSTANCE   = COMPRESS_ENDPOINTS::GET_RESTREAMERS . "/single_instance";
     const SCALE_RESTREAMER              = COMPRESS_ENDPOINTS::GET_RESTREAMERS . "/scale_instance";
@@ -18,7 +18,7 @@ class COMPRESS_ENDPOINTS {
     const RESTREAMER_PULL_START         = COMPRESS_ENDPOINTS::GET_RESTREAMERS . "/pull/start";
     const RESTREAMER_PULL_STOP          = COMPRESS_ENDPOINTS::GET_RESTREAMERS . "/pull/stop";
     # Uploads
-    const GET_UPLOADS                   = COMPRESS_API_URL."/api/v4.0/external/upload";
+    const GET_UPLOADS                   = COMPRESS_API_URL . "/api/v4.0/external/upload";
     const GET_PUBLISHED_UPLOADS         = COMPRESS_ENDPOINTS::GET_UPLOADS . "/get_published";
     const PUBLISH_UPLOAD                = COMPRESS_ENDPOINTS::GET_UPLOADS . "/set_published";
     const CREATE_UPLOAD                 = COMPRESS_ENDPOINTS::GET_UPLOADS . "/create";
@@ -30,7 +30,7 @@ class COMPRESS_ENDPOINTS {
     const CUSTOMERS                      = COMPRESS_API_URL . "/api/v4.0/external/customers";
     const GET_CUSTOMER_ZONE              = COMPRESS_ENDPOINTS::CUSTOMERS . "/s3";
     # Events 
-    const EVENTS_EXTERNAL                = COMPRESS_API_URL. "/api/v4.0/external/events";
+    const EVENTS_EXTERNAL                = COMPRESS_API_URL . "/api/v4.0/external/events";
     const BULK_EVENTS_CREATE             = COMPRESS_ENDPOINTS::EVENTS_EXTERNAL . "/create_bulk";
     //
 }
